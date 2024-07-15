@@ -1,0 +1,639 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Mail HTML</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+	<style>
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+		}
+
+		[style*="Montserrat"] {font-family: 'Montserrat', arial, sans-serif !important;}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border:none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100%!important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+    
+		table td {
+			border-collapse: collapse;
+		}
+    
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+        .header-td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .header {
+            border-radius: 12px;
+        }
+        .menu {
+            background-color: #ffffff;
+            border-radius: 20px;
+        }
+        .menu a {
+            font-family: Arial, sans-serif;
+            color: rgb(52, 52, 52);
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 9px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .menu td {
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 28px;
+        }
+        .header-h1 h1 {
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            font-size: 46px;
+            font-weight: 800;
+            line-height: 56px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .Text h2 {
+            color: rgb(52, 52, 52);
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 104%;
+        }
+        .Text p {
+            color: rgb(52, 52, 52);
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 132%;
+        }
+        .Tour h2 {
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 104%;
+            color: rgb(52, 52, 52);
+        }
+        .Tour p {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 132%;
+            color: rgb(52, 52, 52);
+        }
+        .Cities h3 {
+            color: rgb(52, 52, 52);
+            font-size: 14px;
+            font-weight: 800;
+            line-height: 104%;
+            font-family: Arial, Helvetica, sans-serif, Montserrat;
+        }
+        .Cities p {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 104%;
+            color: rgb(52, 52, 52);
+            font-family: Arial, Helvetica, sans-serif, "Montserrat";
+        }
+        .Stock h2 {
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 104%;
+            color: rgb(52, 52, 52);
+            font-family: Arial, Helvetica, sans-serif, "Montserrat";
+        }
+        .Stock td {
+            padding-top: 20px;
+        }
+        .Webinars-top h2 {
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 104%;
+            color: rgb(52, 52, 52);
+            font-family: Arial, Helvetica, sans-serif, "Montserrat";
+            white-space: nowrap; 
+            padding-top: 50px;
+        }
+        .Webinars-top h3 {
+            font-size: 10px;
+            font-weight: 800;
+            line-height: 104%;
+            color: rgb(52, 52, 52);
+            font-family: Arial, Helvetica, sans-serif, "Montserrat";
+        }
+        .Webinars-top p {
+            font-size: 8px;
+            font-weight: 400;
+            line-height: 152%;
+            color: rgb(52, 52, 52);
+            font-family: Arial, Helvetica, sans-serif, "Montserrat";
+        }
+        .Webinars-bottom p {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 104%;
+            color: #343434;
+            font-family: Arial, Helvetica, sans-serif, "Montserrat";
+        }
+        .Webinars-bottom span {
+            font-weight: 800;
+        }
+        .Webinars-bottom a {
+            text-decoration: none;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 12px;
+            color: #343434;
+            font-family: Arial, Helvetica, sans-serif, "Montserrat";
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 15px;
+            padding-left: 15px;
+            border: 1px solid #343434;
+            border-radius: 12px;
+            white-space: nowrap;
+        }
+        .footer-socual h2 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 130%;
+            font-family: Arial, Helvetica, sans-serif, "Montserrat";
+            color: rgb(52, 52, 52);
+        }
+        .footer-center h2 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 130%;
+            font-family: Arial, Helvetica, sans-serif, "Montserrat";
+            color: rgb(52, 52, 52);
+        }
+        .footer-center p {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 130%;
+            color: #878786;
+            font-family: Arial, Helvetica, sans-serif, "Montserrat";
+        }
+        .footer-bottom p {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 132%;
+            color: #878787;
+            font-family: Arial, Helvetica, sans-serif, "Montserrat";
+        }
+        .footer a {
+            font-weight: 700;
+            color: #878786;
+            font-family: Arial, Helvetica, sans-serif, "Montserrat";
+        }
+
+        @media (max-width: 620px) {
+            .table-600 {
+                width: 550px !important;
+            }
+            .table-570 {
+                width: 520px !important;
+            }
+            .header {
+                width: 550px !important;
+            }
+        }
+        @media (max-width: 580px) {
+            .table-600 {
+                width: 500px !important;
+            }
+            .table-570 {
+                width: 470px !important;
+            }
+            .header {
+                width: 500px !important;
+            }
+            .menu {
+                display: none;
+            }
+        }
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">RUEXPRESS</div>
+	<table class="wrapper" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+        <tr>
+            <td height="10" wigth="600"></td>
+        </tr>   
+		<tr>
+            <td>
+                <table class="header" cellpadding="0" cellspacing="0" width="600" align="center" style="background-image: url('https://i.postimg.cc/bJhxZgZj/image.png'); background-size: cover; background-position: center;">
+                    <tr>
+                        <td class="header-td">
+                            <table class="header-top table-570" cellpadding="0" cellspacing="0" height="50" width="570" align="center">
+                                <tr>
+                                    <td class="logo" align="left">
+                                        <img height="40px"; src="https://i.postimg.cc/RFpwgBPv/Group-1948756285.png" alt="logo" />
+                                    </td>
+                                    <td align="right">
+                                        <table class="menu" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td><a href="#">Поиск тура</a></td>
+                                                <td><a href="#">Акции</a></td>
+                                                <td><a href="#">О компании</a></td>
+                                                <td><a href="#">Бонусная программа</a></td>
+                                                <td><a href="#">Блог</a></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="50"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="header-h1 table-570" cellpadding="0" cellspacing="0" width="570" align="center">
+                                <tr align="center">
+                                    <td>
+                                        <h1 style="font-family: Arial, Helvetica, sans-serif, Montserrat;">Новостной<br>
+                                            фреш</h1>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff">
+                <table class="main table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+
+                    <tr>
+                        <td class="Text" align="left">
+                            <h2 style="font-family: Arial, Helvetica, sans-serif, Montserrat;">ПРИГОТОВЬТЕСЬ К НОВЫМ ЭМОЦИЯМ!</h2>
+                            <p style="font-family: Arial, Helvetica, sans-serif;">Можно поехать и на поезде до Владикавказа. Из Москвы поезда ежедневно отправляются с Павелецкого и Восточного
+                                вокзалов и идут около 40 часов. а самые смелые туристы могут отправиться в этот регион и на машине. Из Москвы
+                                до Владикавказа быстрее всего ехать по платной трассе М-4 до поворота на Тихорецк и далее через Кропоткин,
+                                Армавир, Невинномысск, Пятигорск и Баксан. На дорогу в 1770 км уйдет примерно 21 час.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="catalog" align="center" style="display: flex;">
+                            <a href="#" style="padding-right: 10px;"><img src="https://i.postimg.cc/k5HS0t6L/test.png" alt=""/></a>
+                            <a href="#" style="padding-left: 10px; padding-right: 10px;"><img src="https://i.postimg.cc/SR6zYTTp/1-catalog.png" alt=""/></a>
+                            <a href="#" style="padding-left: 10px;"><img src="https://i.postimg.cc/05DS4j8H/2-catalog.png" alt=""/></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="Tour" align="left">
+                            <h2 style="font-family: Arial, Helvetica, sans-serif, Montserrat;">Наши туры на 2024</h2>
+                            <p style="font-family: Arial, Helvetica, sans-serif;">Можно поехать и на поезде до Владикавказа. Из Москвы поезда ежедневно отправляются с Павелецкого и Восточного вокзалов и идут около 40 часов. а самые смелые туристы могут отправиться в этот регион и на машине. Из Москвы
+                                до Владикавказа быстрее всего ехать по платной трассе М-4 до поворота на Тихорецк и далее через Кропоткин,
+                                Армавир, Невинномысск, Пятигорск и Баксан. На дорогу в 1770 км уйдет примерно 21 час.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <table class="Cities table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td align="left" width="300">
+                                        <h3>Санкт-Петербург</h3>
+                                    </td>
+                                    <td>
+                                        <p>5 дней</p>
+                                    </td>
+                                    <td>
+                                        <p>от 235.000₽</p>
+                                    </td>
+                                    <td align="right">
+                                        <img src="https://i.postimg.cc/c1BjfQKs/Group-1948756544.png" alt="arrow"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="Cities table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td align="left" width="300">
+                                        <h3>Сочи</h3>
+                                    </td>
+                                    <td>
+                                        <p>4 дней</p>
+                                    </td>
+                                    <td>
+                                        <p>от 125.000₽</p>
+                                    </td>
+                                    <td align="right">
+                                        <img src="https://i.postimg.cc/c1BjfQKs/Group-1948756544.png" alt="arrow"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="Cities table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td align="left" width="300">
+                                        <h3>Москва</h3>
+                                    </td>
+                                    <td>
+                                        <p>3 дней</p>
+                                    </td>
+                                    <td>
+                                        <p>от 679.000₽</p>
+                                    </td>
+                                    <td align="right">
+                                        <img src="https://i.postimg.cc/c1BjfQKs/Group-1948756544.png" alt="arrow"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <table class="Stock table-600" cellpadding="0" cellspacing="0" width="600">
+                                <tr>
+                                    <td>
+                                        <h2>АКЦИИ</h2>
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#"><img src="https://i.postimg.cc/8zz7mQTZ/7.png" alt=""/></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#"><img src="https://i.postimg.cc/mZ3hx2Dd/3.png" alt=""/></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#"><img src="https://i.postimg.cc/K8jYgP5V/2.png" alt=""/></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <table class="Webinars-top table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td align="left">
+                                        <h2>ЗАПИСИ ВЕБИНАРОВ</h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="290" height="145" style="padding-right: 30px;">
+                                        <img style="border-radius: 6px;" src="https://i.postimg.cc/tRddrbHb/image.png" alt=""/>
+                                    </td>
+                                    <td>
+                                        <h3>Вы узнаете:</h3>
+                                        <p>
+                                            • Правила въезда в страну и варианты перелетов <br>
+                                            • Основная информация об острове Миконос <br>
+                                            • Выбор оптимального маршрута до острова <br>
+                                            • Обзор эксклюзивных вилл: Villa Hyper 5*, Villa Noelle 5*, Villa My Sunset View 5*, Villa Pathos 5*, Villa Alpha 5*, Villa Arkadia 5* и другие  <br>
+                                            • Досуг и отдых <br>
+                                            • Дополнительные услуги
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <table class="Webinars-bottom table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td>
+                                        <p>
+                                            <span>Виктория Габулова <br></span>
+                                            специалист VIP-отдела<br>
+                                            «Русский Экспресс»<br>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <span>Космас Сецид<br></span>
+                                            управляющий директор<br>
+                                            Hermes Tourism Private Company<br>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>04 июня 2024 г.</p>
+                                    </td>
+                                    <td>
+                                        <p>11:00 (Мск)</p>
+                                    </td>
+                                    <td>
+                                        <a href="#">СМОТРЕТЬ</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="30"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="Webinars-top table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td width="290" height="145" style="padding-right: 30px;">
+                                        <img style="border-radius: 6px;" src="https://i.postimg.cc/q7XbwZ3w/Screenshot-2024-07-01-181845.png" alt=""/>
+                                    </td>
+                                    <td>
+                                        <h3>Вы узнаете:</h3>
+                                        <p>
+                                            • Правила въезда в страну и варианты перелетов <br>
+                                            • Основная информация об острове Миконос <br>
+                                            • Выбор оптимального маршрута до острова <br>
+                                            • Обзор эксклюзивных вилл: Villa Hyper 5*, Villa Noelle 5*, Villa My Sunset View 5*, Villa Pathos 5*, Villa Alpha 5*, Villa Arkadia 5* и другие  <br>
+                                            • Досуг и отдых <br>
+                                            • Дополнительные услуги
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <table class="Webinars-bottom table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td>
+                                        <p>
+                                            <span>Виктория Габулова <br></span>
+                                            специалист VIP-отдела<br>
+                                            «Русский Экспресс»<br>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <span>Космас Сецид<br></span>
+                                            управляющий директор<br>
+                                            Hermes Tourism Private Company<br>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>04 июня 2024 г.</p>
+                                    </td>
+                                    <td>
+                                        <p>11:00 (Мск)</p>
+                                    </td>
+                                    <td>
+                                        <a href="#">СМОТРЕТЬ</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="50"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="Guide table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td align="left" style="padding-right: 20px;">
+                                        <img src="https://i.postimg.cc/7hPN3th0/Group-1948756663.png" alt=""/>
+                                    </td>
+                                    <td align="right">
+                                        <img style="padding-bottom: 19px;" src="https://i.postimg.cc/DzqQt3b1/Group-1948756666.png" alt=""/>
+                                        <img src="https://i.postimg.cc/V6m9wZjp/Group-1948756664.png" alt=""/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td style="padding-top: 20px;">
+                                <img src="https://i.postimg.cc/152pX3Gp/guide.png" alt=""/>
+                            </td>
+                        </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td height="50"></td>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="footer table-600 table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                    <tr>
+                        <td>
+                            <table class="footer-socual table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td align="center">
+                                        <h2>Присоединяйтесь к нам</h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="10"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                            <tr>
+                                                <td align="center">
+                                                    <img src="https://i.postimg.cc/SN2MBbBj/Group-1948756646.png" alt=""/>
+                                                </td>
+                                                <td align="center">
+                                                    <img src="https://i.postimg.cc/4ND9ZFGP/Mask-group.png" alt=""/>
+                                                </td>
+                                                <td align="center">
+                                                    <img src="https://i.postimg.cc/tJLYq7KJ/Group-1948756647.png" alt=""/>
+                                                </td>
+                                                <td align="center">
+                                                    <img src="https://i.postimg.cc/8P67yBv6/Group-1948756645.png" alt=""/>
+                                                </td>
+                                                <td align="center">
+                                                    <img src="https://i.postimg.cc/3xQdz4jb/F.png" alt=""/>
+                                                </td>
+                                                <td align="center">
+                                                    <img src="https://i.postimg.cc/LsHh6cbt/inst.png" alt=""/>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="30"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="footer-center table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td align="left">
+                                        <h2 align="center">8 495 662 99 40</h2>
+                                        <p align="center">Круглосуточно и бесплатно по РФ</p>
+                                    </td>
+                                    <td align="right">
+                                        <h2 align="center">agent@r-express.ru</h2>
+                                        <p align="center">Круглосуточно и бесплатно по РФ</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="30"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="footer-bottom table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td  align="center">
+                                        <p style="width: 300px;">Вы можете <a href="#">отказаться</a> от новых писем,
+                                            но не отказывайтесь от новых путешествий</p>
+                                        <p>ООО «ОЦБ», ОГРН 000000000, ИНН/КПП 000000000/00000000.
+                                            Юридический адрес: 109004, город Москва, ул Земляной Вал, д. 59 стр. 2, этаж 6 ком. 1е.
+                                            © «Русский экспресс», 2024</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="10"></td>
+        </tr>
+	</table>
+</body>
+
+</html>
